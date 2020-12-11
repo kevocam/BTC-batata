@@ -1,0 +1,398 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap');
+
+/* 
+font-family: 'DM Sans', sans-serif;
+
+font-family: 'Inter', sans-serif;
+
+background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+:root{
+    --bitcoin-orange:#F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue:#1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --black:#282623;
+    --gray:#BABABA;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+
+}
+header{
+    background:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%;
+    min-width:320px;
+    height: 334px;
+    text-align: center;
+}
+header figure img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+    
+}
+.header--title-container{
+    width:90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin-top:40px;
+    align-self: center;
+}
+.header--title-container h1{
+    font-weight: 700;
+    color: var(--just-white);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+} 
+.header--title-container P{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--soft-orange);
+    margin-top:25px;
+    line-height: 1.8rem;
+}
+.header--title-container .header--button{
+    position: absolute;
+    top:270px;
+    display: block;
+    margin-top:35px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    border-radius:5px;
+    box-shadow: 0px 4px 8px rgb(89,73,30,0.16);
+    border:none;
+    font-size:1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color:var(--warm-black);
+    left:calc(50% - 118px);
+    padding-top:15px;
+}
+.header--button span{
+    display:inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left:10px;
+    background-image: url("./assets/icons/Vector.svg");
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.mainExchange{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align:center;
+}
+.mainExchange--texto{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin:0 auto;
+}
+.mainExchange .mainExchange--img {
+   width: 200px;
+   height: 200px;
+   margin:0 auto;
+
+}
+.main--img img{
+    width: 100%;
+}
+.mainExchange--texto h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color:var(--black)
+}
+.mainExchange--texto p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #757575;
+
+}
+.mainExchange--tables{
+/* text-align: center; */
+/* margin: 0 auto; */
+}
+.mainExchange--tables table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    
+    margin:0 auto;
+    background-color:#fff;
+    color:var(--gray);
+    font-family: 'Inter', sans-serif;
+    text-align:left;
+    border-radius:12px;
+
+}
+.mainExchange--tables table tr td{
+   width: 101px;
+   height: 39px; 
+   font-size: 1.6rem;
+   padding:10px 12px;
+}
+
+.mainExchange--tables_monedas{
+    font-size:1.8rem;
+    color:#FF9536;
+    font-weight: 700;
+    width:70%;
+    
+    
+}
+.table__rigth{
+    width: 95px;
+    font-weight: 400;
+}
+.table__rigth span{
+    margin-left: 10px;
+}
+.update{
+    width: 60%;
+    max-width:500px;
+    font-size: 1.2rem;
+    margin:0 auto;
+    text-align: center;
+    background-color: var(--soft-orange);
+    border-radius:20px;
+    border:none;
+    
+}
+.update span{
+    font-weight: 700;
+}
+.details{
+    background-color: var(--warm-black);
+    width:100%;
+    text-align: center;
+    height: auto;
+}
+.details--text__title h2{
+    font-size: 2.4rem;
+    color:var(--just-white);
+    line-height: 2.6rem;
+    padding-top:52px;
+}
+.details--text__content{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color:#808080;
+    width:80%;
+    margin:0 auto;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+.details--card{
+    background-color:var(--black);
+    color:white;
+    width:90%;
+    max-width:400px;
+    margin:0 auto;
+    padding:1.6rem;
+    border-radius:4px;
+    margin-bottom:12px;
+}
+.details--card__icon{
+    text-align:left;
+    padding-bottom: 12px;
+}
+.details--card__title{
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.details--card__content{
+    text-align: left;
+   font-size: 1.4rem;
+   line-height: 1.8rem;
+   font-weight: 500;
+   color:#808080;
+   padding-top:15px;
+}
+.card--container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.details-logo img{
+        margin-top:-10px;
+}
+.logo-baby{
+    width: 100%;
+    height: 50vh;
+    background-image: url("/assets/img/bitcoinbaby2x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    /* display: flex;
+    align-items: center;
+ */
+} 
+.logo-baby p{
+    color:white;
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    padding-top:60px;
+    
+} 
+.planes--text h3{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color:var(--warm-black);
+    text-align: center;
+    margin-top:16px;
+
+}
+.planes--text p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding-top:15px;
+    color:#757575;
+    text-align:center;
+    font-weight: 500;
+    
+}
+.planes--card{
+    position: relative;
+    scroll-snap-align:center;
+    width:65%;
+    min-width: 230px;
+    margin:0 auto;
+    max-width: 300px;
+    border-radius:15px;
+    height: 250px;
+    margin:50px auto 0;
+    text-align: center;
+    padding:0 15px;
+    background-color: var(--just-white);
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+    
+}
+.planes--card .recomendado{
+    position: relative;
+    width: 120px;
+    height: 31px;
+    background-color: var(--bitcoin-orange);
+    color:var(--just-white);
+    top:-15px;
+    left: calc(50% - 60px);
+    min-width: 85px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius:8px;
+    padding: 6px;  
+}
+.planes--card__title{
+    padding-top:10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color:black;   
+}
+.planes--card__price{
+    padding:5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    position: relative;
+}
+.planes--card__price span{
+    position: relative;
+    top:-25px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+.planes--card__saving{
+    font-size: 1.2rem;
+    color:#757575;
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-family: 'Inter', sans-serif;
+
+}
+.planes--card__button{
+    width:150px;
+    height: 48px;
+    margin-top:20px;
+    background-color: var(--just-white);
+    border:2px solid var(--bitcoin-orange);
+    border-radius:4px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color:var(--black);
+    font-weight: bold;
+}
+.planes--card__button span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom;
+}
+
+.planes--containerSlider{
+    display: flex;
+    gap:15px;
+    height: 316px;
+    overflow-x:scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: proximity;
+
+}
+footer{
+    background-color: var(--bitcoin-orange);
+    display: flex;
+    justify-content: space-around;
+    color:var(--soft-blue);
+    padding:20px;
+}
+footer .contact{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .contact ul{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+footer .contact ul li{
+    margin:10px 0;
+}
+footer .contact ul li:hover{
+    cursor: pointer;
+}

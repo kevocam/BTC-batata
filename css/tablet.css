@@ -1,0 +1,12 @@
+.planes--containerSlider{
+    justify-content: center;
+   
+}
+.card--container{
+    flex-wrap: wrap;
+ max-width: 930px;
+ margin:0 auto;
+}
+html{
+    font-size: 80%;
+}
